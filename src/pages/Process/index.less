@@ -1,0 +1,234 @@
+.mainbox{
+  height: 100%;
+  width: 100%;
+  .drag{
+    width: 100%;
+    min-height: 850px;
+    //border-bottom: 1px solid #ccc;
+    position: relative;
+    //border: 1px solid red;
+
+    .dragleft{
+      background: #f6f6f6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 268px;
+      bottom: 0;
+      border-right: solid 1px #e0e0e0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 24px;
+      .tags{
+        width: 98px;
+        background: #fffdfd;
+        border: 1px solid #DADADA;
+        height: 25px;
+        line-height: 25px;
+        color: #666666;
+        text-align: left;
+        float: left;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+      .tags2{
+        width: 96px;
+        background: #fffdfd;
+        border: 1px solid #189DF3;
+        height: 25px;
+        line-height: 25px;
+        color: #189DF3;
+        text-align: left;
+        float: left;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+
+
+      .zhezhaoleft{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50000;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+      }
+    }
+    .dragcon{
+      position: absolute;
+      top: 0;
+      left: 270px;
+      right: 295px;
+      bottom: 0;
+      overflow-y: scroll;
+      padding: 0;
+      background: #ffffff;
+
+      .qingjiatop{
+        padding: 24px;
+        .qingjiabutton{
+          margin-right: 24px;
+          margin-top: 24px;
+        }
+      }
+
+
+      .zzzzzz{
+        width: 100%;
+        height: 100%;
+
+        .zzzzzz2{
+          width: 100%;
+          min-height: 850px;
+          padding: 0;
+
+
+          .zhezhaocon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 50000;
+            width: 100%;
+            height: 100%;
+          }
+
+          .centera{
+            margin: 400px auto;
+            text-align: center;
+            line-height: 50px;
+          }
+          .wai{
+            width: 100%;
+            padding: 5px 24px;
+            border-bottom: 1px dashed  #0f86d3;
+            border-left: 1px dashed  #0f86d3;
+            border-right: 1px dashed  #0f86d3;
+            position: relative;
+            h2{
+              font-size: 14px;
+              width: 100%;
+              .xinghao{
+                color: red;
+              }
+            }
+            .width40{
+              width: 40%;
+            }
+            .zhezhao{
+              width: 100%;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              position: absolute;
+              z-index: 1000;
+            }
+            .delite{
+              bottom: 5px;
+              right: 30px;
+              position: absolute;
+              z-index: 1001;
+              cursor: pointer;
+              display: none;
+              width: 40px;
+              height: 40px;
+            }
+            .copy{
+              width: 40px;
+              height: 40px;
+              bottom: 5px;
+              right: 80px;
+              position: absolute;
+              z-index: 1001;
+              cursor: pointer;
+              display: none;
+            }
+          }
+          .wai:hover{
+            .delite{
+              display: block;
+            }
+            .copy{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .dragright{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      bottom: 0;
+      border-left: solid 1px #e0e0e0;
+      padding: 24px;
+      background: #ffffff;
+      .righttop{
+        h2{
+          font-size: 14px;
+        }
+      }
+
+      .centera{
+        text-align: center;
+        line-height: 50px;
+        margin-top: 400px;
+      }
+    }
+  }
+}
+
+// 提示是否保存
+.saveMask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: default;
+  .isSave {
+    width: 300px;
+    height: 180px;
+    background: #fff;
+    .tipCon {
+      color: #333;
+      text-align: center;
+      margin: 60px 0 27px 0;
+    }
+    .saveBtn {
+      display: flex;
+      justify-content: center;
+      p {
+        width: 80px;
+        height: 30px;
+        border-radius: 3px;
+        margin: 0 15px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+    .sureSave {
+      color: #fff;
+      background: #189df3;
+    }
+    .cancalSave {
+      background: #f3f3f3;
+      border: 1px solid #e7e7e7;
+      color: #666;
+    }
+  }
+}
+
+:global{
+  .ant-card-bordered{
+    border: none;
+  }
+}
+

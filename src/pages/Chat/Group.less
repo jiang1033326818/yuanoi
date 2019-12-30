@@ -1,0 +1,144 @@
+.groupMask{
+    width: 100%;
+    height: 100%;
+    // background: #189DF3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.group{
+    width:602px;
+    height:616px;
+    background: #fff;
+    box-shadow: 0 0 1px #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.groupLeft,.groupRight{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow-y: scroll;
+}
+.groupLeft{
+    border-right: 1px solid #E5E5E5;
+}
+.sousuo{
+    width: 86%;
+    margin: 0 auto;
+    div{
+        width: 252px;
+        height: 32px;
+        margin: 21px auto;
+        background: rgba(246, 246, 246, 0.8);
+    }
+    input{
+        background: transparent;
+    }
+}
+.allUser{
+    font-size: 14px;
+    margin-bottom: 40px;
+    p{
+        width: 160px;
+    }
+    .word{
+        margin: 0;
+        padding: 0 35px;
+        box-sizing: border-box;
+    }
+}
+.userItem{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+.userImg{
+    width: 46px;
+    height: 46px;
+    margin: 0 15px 0 2px;
+    border-radius: 50%;
+}
+.userInfo{
+    cursor: default;
+    p{
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        // padding: 8px 0;
+        margin: 0 0 2px 0;
+        box-sizing: border-box;
+        max-width: 160px;
+    }
+}
+.userChat{
+    color: #999;
+    height: 20px;
+}
+.ready{
+    width: 15px;
+    margin: 0 10px;
+}
+
+.groupTip{
+    margin: 38px 30px 25px 30px;
+    font-size: 14px;
+}
+.groupRight{
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    width: 12px;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    button{
+        border: 0;
+        outline: 0;
+        font-size: 12px;
+        width: 68px;
+        height: 30px;
+        margin: 0 5px;
+        display: block;
+        background: #E8E8E8;
+        color: #999999;
+    }
+    .sure{
+        background: #189DF3;
+        color: #fff;
+    }
+}
+
+// /*定义滚动条样式（高宽及背景）*/ 
+// ::-webkit-scrollbar { 
+//     width: 0px;   /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+//     background: transparent;
+// } 
+// /*定义滚动条轨道（凹槽）样式*/ 
+// ::-webkit-scrollbar-track { 
+//     // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    /* 较少使用 */
+//     border-radius: 3px; 
+// } 
+// /*定义滑块 样式*/ 
+// ::-webkit-scrollbar-thumb { 
+//     border-radius: 3px; 
+//     height: 100px;    /* 滚动条滑块长度 */
+//     background-color: rgba(229,229,229,.6); 
+// }

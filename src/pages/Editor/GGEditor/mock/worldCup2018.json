@@ -1,0 +1,60 @@
+{
+  "roots": [
+    {
+      "label": "李然  CEO",
+      "children": [
+        {
+          "label": "技术部 刘一  CTO",
+          "children": [
+            {"label": "宋搜  技术经理", "value": 17010},
+            {"label": "声大奥  产品总监", "value": 5842},
+            {
+              "label": "王飞  产品经理 ",
+              "children": [
+                {"label": "山东矿  产品设计", "value": 1983},
+                {"label": "山东矿  产品设计", "value": 2047},
+                {"label": "山东矿  产品设计", "value": 1375},
+                {"label": "山东矿  产品设计", "value": 8746},
+                {"label": "山东矿  产品设计", "value": 2202},
+                {"label": "山东矿  产品设计", "value": 1382},
+                {"label": "山东矿  产品设计", "value": 1629},
+                {"label": "山东矿  产品设计", "value": 1675},
+                {"label": "山东矿  产品设计", "value": 2042}
+              ]
+            },
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041},
+            {"label": "赵多  teamleader", "value": 1041}
+
+          ]
+        },
+        {
+          "label": "行政部   王花  cfo ",
+          "children": [
+            {
+              "label": " 柳州   财务总监",
+              "children": [
+                {"label": "Converters", "value": 721},
+                {"label": "DelimitedTextConverter", "value": 4294},
+                {"label": "GraphMLConverter", "value": 9800},
+                {"label": "IDataConverter", "value": 1314},
+                {"label": "JSONConverter", "value": 2220}
+              ]
+            },
+            {"label": "撒的   人事总监", "value": 1759},
+            {"label": "松岛枫 财务 ", "value": 2165},
+            {"label": "DataSet   会计", "value": 586},
+            {"label": "DataSource  出纳", "value": 3331}
+          ]
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,123 @@
+.chatLeft{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.centerjiazai2{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 35%;
+}
+
+
+
+.sousuo{
+    width: 234px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    background: #ebebeb;
+    border-radius: 16px;
+    margin: 20px 0;
+    position: relative;
+    margin-left: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .add{
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        top: 0;
+        right: -40px;
+    }
+}
+.groupMask{
+    width: 100%;
+    height: 100%;
+    background: #189DF3;
+}
+.userList{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 65px;
+    padding-bottom: 65px;
+    box-sizing: border-box;
+}
+.userItem{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.nowItem{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background: #E5E5E5;
+    padding-left: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.userItem:hover{
+    background: #EFEFEF;
+}
+.userImg{
+    width: 46px;
+    height: 46px;
+    margin: 6px 14px;
+    border-radius: 50%;
+}
+.userInfo{
+    cursor: default;
+    p{
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        // padding: 8px 0;
+        margin: 2px 0 2px 0;
+        box-sizing: border-box;
+        max-width: 156px;
+    }
+}
+.topInfo{
+    width: 198px;
+    display: flex;
+    justify-content: space-between;
+    color: #BFBFBF;
+}
+.userName{
+    font-size: 14px;
+    color: #000000;
+}
+.userChat{
+    color: #999;
+    height: 20px;
+    font-size: 12px;
+}
+.noRead{
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+.read{
+    background: transparent;
+    display: none;
+}

@@ -1,0 +1,333 @@
+.leftleft{
+  width: 100%;
+  height: 72px;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 32px;
+  // .flowItem {
+  //   width: 100%;
+  //   height: 45px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin: 20px 0;
+  // }
+
+  span {
+    // margin: 0 10px;
+    // padding: 0;
+    // cursor: default;
+    width: 80px;
+    display: inline-block;
+    height: 72px;
+    line-height: 72px;
+    margin: 0 25px;
+    cursor: pointer;
+    transition: all .5s;
+    color: #333;
+  }
+
+  .flowItems {
+    // width: 100%;
+    // height: 45px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 20px 0;
+    // color: #fff;
+    // background: #189DF3;
+    color: #189DF3;
+    border-bottom: 3px solid #189DF3;
+    transition: all .5s;
+  }
+}
+
+.content{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 23px 62px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+}
+.flow {
+  // width: 80%;
+  background: #fff;
+  margin: 0 auto;
+  // float: left;
+
+  .flowInfo {
+    width: 100%;
+
+    p {
+      margin: 0;
+      cursor: default;
+    }
+
+    .useTitle {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      background: #F6F6F6;
+      padding-left: 18px;
+      box-sizing: border-box;
+    }
+
+    .useFlow {
+      color: #333333;
+      font-size: 14px;
+
+      .createUse {
+        width: 230px;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        margin: 25px 52px 25px 0;
+        border: 1px solid #EBEBEB;
+        border-radius: 1px;
+        cursor: pointer;
+
+        img {
+          width: 48px;
+          margin: 0 15px 0 30px;
+        }
+
+        p {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .allSpare {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .spareUse:hover {
+      border: 1px solid #189DF3;
+      .bluet{
+        display: block;
+      }
+    }
+    .spareUses:hover {
+      border: 1px solid #189DF3;
+
+      .bluet{
+        display: block;
+      }
+    }
+    .spareUse,.spareUses{
+      width: 230px;
+      height: 84px;
+      display: flex;
+      align-items: center;
+      margin: 24px 0;
+      border: 1px solid #DADADA;
+      border-radius: 1px;
+      position: relative;
+      cursor: pointer;
+      .bluet{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #ecf8ff;
+        color: #189DF3;
+        display: none;
+        height: 25px;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: right;
+        padding: 0 15px;
+      }
+
+      img {
+        width: 48px;
+        margin: 0 15px 0 10px;
+      }
+
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 90px;
+        color: #333333;
+        font-size: 14px;
+      }
+
+      .xiugai {
+        width: 100px;
+        height: 25px;
+        border: 1px solid #eee;
+        outline: 0;
+        text-indent: 5px;
+        position: absolute;
+        top: 50%;
+        left: 70px;
+        transform: translate(0, -50%);
+        display: none;
+      }
+
+      .hasDown {
+        width: 15px;
+        position: absolute;
+        top: 7px;
+        right: -7px;
+      }
+
+      .handled {
+        position: absolute;
+        top: 18px;
+        right: 0px;
+        font-size: 14px;
+        background: #fff;
+        width: 72px;
+        box-sizing: border-box;
+        box-shadow: 0 0 3px #eee;
+        padding: 0px 0;
+        text-align: center;
+        color: #666;
+
+        li {
+          list-style: none;
+          height: 20px;
+          line-height: 20px;
+          letter-spacing: 1px;
+        }
+
+        li:hover {
+          color: #189DF3;
+          background: #ECF8FF;
+          cursor: default;
+        }
+      }
+    }
+
+
+    .spareUse {
+      margin-right: 52px;
+    }
+
+
+    .spareFlow {
+      color: #999999;
+      font-size: 14px;
+    }
+
+    .sureFlow {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .sureType {
+        color: #333333;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 18px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.flowLeft {
+  width: 100%;
+
+  .flowItem {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  p {
+    margin: 0 10px;
+    padding: 0;
+    cursor: default;
+  }
+
+  .flowItems {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #fff;
+    background: #189DF3;
+  }
+}
+
+.maskTip {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: default;
+
+  .tip {
+    width: 300px;
+    height: 180px;
+    background: #fff;
+
+    .tipCon {
+      color: #333;
+      text-align: center;
+      margin: 60px 0 27px 0;
+    }
+
+    .saveBtn {
+      display: flex;
+      justify-content: center;
+
+      p {
+        width: 80px;
+        height: 30px;
+        border-radius: 3px;
+        margin: 0 15px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+
+    .sureSave {
+      color: #fff;
+      background: #F45454;
+    }
+
+    .cancalSave {
+      background: #f3f3f3;
+      border: 1px solid #e7e7e7;
+      color: #666;
+    }
+  }
+}
+
+
+
+.tantantan{
+  display: flex;
+  width: 100%;
+  padding: 40px 0;
+  .iii{
+
+  }
+  img{
+    width: 38%;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  img:hover{
+    border-radius: 13px;
+    box-shadow: 0 0 5px #aaa;
+  }
+}

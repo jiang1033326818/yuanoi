@@ -1,0 +1,306 @@
+.setup {
+  width: 100%;
+  height: calc(100% - 54px);
+  height: -webkit-calc(100% - 54px);
+  height: -moz-calc(100% - 54px);
+  display: table;
+  box-shadow: 0 0 15px #eee;
+
+  .panelSet, .appSet, .dataSet {
+    display: table-cell;
+    width: 40%;
+    background: #fff;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .setTitle {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin: 0;
+    color: #666;
+    border-bottom: 1px solid #E3E3E3;
+  }
+
+  .panelSet {
+    width: 20%;
+    background: #F6F6F6;
+    min-width: 280px;
+  }
+
+  .appSet {
+    border-right: 3px solid #F0F1F6;
+  }
+
+  .setCon {
+    width: 100%;
+    height: 680px;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+  }
+
+  .phoneData {
+    width: 253px;
+    height: 426px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: default;
+
+    .phoneItem {
+      width: 100%;
+      background: #fff;
+      margin-bottom: 10px;
+    }
+
+    .phoneTitle {
+      border-bottom: 1px solid #EEEEEE;
+      font-size: 12px;
+      margin: 0;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .dataItem {
+      width: 90%;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 auto;
+      border-bottom: 1px solid #eee;
+
+      img {
+        width: 20px;
+        margin-right: 5px;
+        float: left;
+        margin-top: 10px;
+      }
+
+      div {
+        float: left;
+      }
+    }
+
+    .changePanel {
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      background: #fff;
+      color: #189DF3;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .tempIcon {
+    position: relative;
+  }
+
+  .iconBox {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #eee;
+    position: absolute;
+    top: 5px;
+    right: -155px;
+    overflow-y: scroll;
+    z-index: 100;
+    display: none;
+
+    img {
+      width: 40px;
+      margin: 5px 5px;
+    }
+  }
+
+  .approvalSet, .tempSet, .flowSet, .recordSet {
+    width: 100%;
+    margin-top: 10px;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+
+  .appSetInp {
+    width: 100%;
+    height: 28px;
+    outline: 0;
+    border: 1px solid #DADADA;
+  }
+
+  .iconSet {
+    width: 45px;
+  }
+
+  .chooseIcon {
+    width: 75px;
+    height: 28px;
+    border: 1px solid #189DF3;
+    background: #F6F6F6;
+    color: #189DF3;
+    border-radius: 2px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .allPanel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .panelItem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: default;
+
+    img {
+      width: 16px;
+      margin: 0 5px 0 0;
+    }
+  }
+
+  .appPanel {
+    width: 100%;
+    margin: 50px 0 15px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      width: 12px;
+      margin: 0 0 0 5px;
+    }
+  }
+
+  .phoneSet {
+    width: 300px;
+    margin: 10px auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.publishMask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: default;
+
+  .pubSucc {
+    width: 460px;
+    height: 270px;
+    background: #fff;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pubTop {
+    font-size: 17px;
+    color: #189DF3;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E3E3E3;
+
+    img {
+      width: 28px;
+      margin: 0 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .pubTip {
+    font-size: 12px;
+    color: #333;
+    padding: 20px 25px;
+    box-sizing: border-box;
+
+    p {
+      span {
+        color: #189DF3;
+        font-size: 17px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      height: 30px;
+      line-height: 30px;
+      margin-bottom: 0;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .keepEdit {
+    width: 85px;
+    color: #666;
+    border: 1px solid #E7E7E7;
+    background: #F3F3F3;
+    margin-right: 15px;
+  }
+
+  .pubSuccess {
+    width: 75px;
+    color: #fff;
+    background: #189DF3;
+  }
+}
+
+
+/*定义滚动条样式（高宽及背景）*/
+::-webkit-scrollbar {
+  width: 6px; /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+  background: transparent;
+}
+
+/*定义滚动条轨道（凹槽）样式*/
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    /* 较少使用 */
+  border-radius: 3px;
+}
+
+/*定义滑块 样式*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  height: 100px; /* 滚动条滑块长度 */
+  background-color: rgba(229, 229, 229, .6);
+}

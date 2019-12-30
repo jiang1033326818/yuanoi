@@ -1,0 +1,165 @@
+// 预览
+.previewMask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  // display: none;
+  .preview {
+    width: 800px;
+    height: 700px;
+    background: #fff;
+    margin: 70px auto;
+  }
+  .previewNav {
+    width: 100%;
+    height: 40px;
+    background: #199df2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    .computerNav {
+      width: 70px;
+      height: 100%;
+      background: #fff;
+      line-height: 40px;
+    }
+    .phoneNav {
+      width: 70px;
+      height: 100%;
+      line-height: 40px;
+    }
+    img {
+      height: 21px;
+    }
+    .closePre {
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 11px;
+      right: 11px;
+    }
+  }
+  .previewCon {
+    width: 100%;
+    height: 660px;
+    position: relative;
+  }
+  .previewCom,
+  .previewPho {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .previewCom {
+    z-index: 2;
+  }
+  .previewPho {
+    z-index: 1;
+  }
+}
+// web
+.computer {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.centera{
+  margin: 0 auto;
+  text-align: center;
+  line-height: 850px;
+}
+.wai{
+  width: 100%;
+  padding: 0 24px 10px 24px;
+  position: relative;
+  h2{
+    font-size: 14px;
+  }
+  .width40{
+    width: 40%;
+  }
+  .delite{
+    bottom: 5px;
+    right: 30px;
+    position: absolute;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+    width: 40px;
+    height: 40px;
+  }
+  .copy{
+    width: 40px;
+    height: 40px;
+    bottom: 5px;
+    right: 80px;
+    position: absolute;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+  }
+}
+.wai:hover{
+  .delite{
+    display: block;
+  }
+  .copy{
+    display: block;
+  }
+}
+// 手机
+.phone {
+  width: 100%;
+  position: relative;
+  .phoneBg {
+    width: 310px;
+    margin: 15px auto;
+    display: block;
+  }
+  .phoneCon {
+    width: 246px;
+    height: 473px;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 12px;
+  overflow-y: scroll;
+    span,h2{
+      font-size: 12px;
+    }
+    .wai{
+      padding: 0 10px 10px;
+    }
+  }
+}
+
+
+/*定义滚动条样式（高宽及背景）*/
+::-webkit-scrollbar {
+  width: 6px; /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+  background: transparent;
+}
+/*定义滚动条轨道（凹槽）样式*/
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    /* 较少使用 */
+  border-radius: 3px;
+}
+/*定义滑块 样式*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  height: 100px; /* 滚动条滑块长度 */
+  background-color: rgba(229, 229, 229, 0.6);
+}

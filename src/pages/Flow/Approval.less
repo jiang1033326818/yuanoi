@@ -1,0 +1,626 @@
+.allflow {
+  width: 100%;
+  display: table;
+  min-height: 850px;
+  .left {
+    width: 17%;
+    min-width: 300px;
+    background: #f6f6f6;
+    height: 100%;
+    display: table-cell;
+  }
+  .right {
+    width: 83%;
+    display: table-cell;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//为了好分辨把间距调大一点
+
+.xinshou{
+  position: relative;
+  width: 1000px;
+  margin: 10px auto;
+  height: 180px;
+  background: #ffffff;
+  .zhiyin{
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    width: 80px;
+    height: 25px;
+    background: #189DF3;
+    line-height: 25px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+  }
+  .cha0{
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .three{
+    width: 800px;
+    margin-left: 100px;
+    display: flex;
+    .one0{
+      width: 33%;
+      height: 180px;
+      text-align: center;
+      p{
+        color: black;
+        text-align: center;
+        margin-top: 24px;
+      }
+      img{
+        margin-top: 4px;
+        cursor: pointer;
+      }
+      .teshu{
+        margin-top: 14px;
+      }
+      .fangda{
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+}
+
+.allllll{
+  position: relative;
+  background: #f0f2f5;
+}
+
+//遮罩层和谈窗框
+.zhezhao{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 66666666;
+}
+.tishi1{
+  position: absolute;
+  top: 200px;
+  left: 25%;
+  z-index: 77777777;
+  width: 600px;
+  height: 600px;
+  background: #ffffff;
+  text-align: center;
+  p{
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    font-size: 14px;
+  }
+  image{
+    margin: 0 auto;
+  }
+  .chacha{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sheji{
+  position: absolute;
+  top: 45px;
+  left: 24px;
+  font-size: 14px;
+  color: black;
+}
+.sheji2{
+  margin-top: 45px;
+  margin-left: 24px;
+  font-size: 14px;
+  color: black;
+}
+
+
+// 审批流
+.approval {
+  width: 100%;
+  display: flex;
+  font-size: 12px;
+  min-height: 850px;
+  .appleft {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    border-right: 4px solid #f0f1f6;
+    .levelNameo {
+      width: 100px;
+      background: #fff;
+      color: #189df3;
+      margin-top: 70px;
+      cursor: default;
+    }
+    .levelName {
+      width: 120px;
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+      background: #189df3;
+      color: #fff;
+      font-size: 12px;
+      position: relative;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+    .levelName:hover .delevel {
+      display: block;
+    }
+    .levelName:hover {
+      background: #0f86d3;
+    }
+    .delevel {
+      width: 8px;
+      position: absolute;
+      top: 4px;
+      right: 5px;
+      display: none;
+    }
+    .isaddlevel {
+      position: relative;
+    }
+    .addlevel {
+      width: 25px;
+      position: absolute;
+      top: 46%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+
+    .diandiandian{
+      width: 120px;
+      height: 35px;
+      line-height: 35px;
+      border-radius: 2px;
+      border: 1px dashed  #0f86f3;
+      color: #0f86f3;
+      font-size: 35px;
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .flowOver {
+      background: #fff;
+      color: #189df3;
+      margin: 10px 0 100px 0;
+      cursor: default;
+      img {
+        width: 13px;
+        margin: 0 2px 2px 0;
+      }
+    }
+
+    .flowOver2 {
+      background: #fff;
+      color: #189df3;
+      margin: 100px 0 0 0;
+      cursor: default;
+      img {
+        width: 13px;
+        margin: 0 2px 2px 0;
+      }
+    }
+  }
+  .handle {
+    width: 65%;
+    // padding: 10px;
+    // box-sizing: border-box;
+    position: relative;
+    .handTop {
+      width: 98%;
+      height: 45px;
+      border-bottom: 1px solid #e3e3e3;
+      position: absolute;
+      p {
+        float: right;
+        width: 68px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #f6f6f6;
+        border-radius: 2px;
+        border: 1px solid #ebebeb;
+        color: #999;
+        margin: 5px 8px;
+        cursor: default;
+      }
+    }
+    .else {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      // padding-top: 45px;
+      // box-sizing: border-box;
+    }
+    .build {
+      height: 100%;
+      border-right: 4px solid #f0f1f6;
+      position: relative;
+    }
+    .report {
+      width: 50%;
+    }
+  }
+}
+// 添加审批人
+.leaderMask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  .addLeader {
+    width: 600px;
+    height: 555px;
+    background: #fff;
+    margin: 50px auto;
+  }
+  .addTitle {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background: #199df2;
+    position: relative;
+    img {
+      width: 15px;
+      /* height: 12px; */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .leadSou {
+    width: 170px;
+    border-radius: 15px;
+    margin: 15px 10px 15px 400px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 22px;
+    input {
+      outline: 0;
+      border: 0;
+      text-indent: 13px;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+      margin-bottom: 3px;
+    }
+  }
+  .allChoose {
+    width: 92%;
+    margin: 0 auto;
+    border: 1px solid #dadada;
+  }
+  .chooseClass {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    background: #f6f6f6;
+    text-align: center;
+    span {
+      width: 80px;
+      display: inline-block;
+    }
+  }
+  .leaders {
+    width: 100%;
+    display: flex;
+  }
+  .allLeader,
+  .chooseLeaer {
+    width: 50%;
+    height: 375px;
+    overflow-y: scroll;
+  }
+  .allLeader {
+    border-right: 1px solid #e3e3e3;
+  }
+  .leaderItem {
+    width: 95%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .leaderItem:hover {
+    background: #f6f6f6;
+  }
+  .chooseThis {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+  }
+  .chooseLeaer {
+    .leaderItem {
+      justify-content: space-between;
+    }
+    .chooseThis {
+      margin: 0 10px 0 0;
+    }
+  }
+  .userItem {
+    display: flex;
+    align-items: center;
+  }
+  .userImg {
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+  .userInfo {
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 125px;
+      font-size: 12px;
+      margin: 0;
+      cursor: default;
+    }
+  }
+  .userName {
+    font-size: 13px;
+    color: #333333;
+  }
+  .userDept {
+    color: #666666;
+  }
+  .choosebtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  .trueBtn,
+  .noBtn {
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    margin: 0 10px;
+  }
+  .trueBtn {
+    background: #189df3;
+    color: #fff;
+  }
+  .noBtn {
+    background: #f3f3f3;
+    color: #666666;
+  }
+}
+// 左侧
+.approvalLeft {
+  width: 300px;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 12px;
+  cursor: default;
+  .leftTitle {
+    margin-top: 45px;
+    margin-left: 24px;
+    font-size: 14px;
+    color: black;
+    img{
+      cursor: pointer;
+    }
+  }
+  .termone,
+  .termtwo,
+  .termthree {
+    display: flex;
+    margin-bottom: 15px;
+    img {
+      width: 12px;
+      height: 12px;
+      margin: 5px 3px 0 0;
+    }
+    select {
+      border: solid 1px #dadada;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: url('../../../images/flow/downlevel.png') no-repeat scroll right center #fff;
+      background-position-x: 80%;
+      background-size: 27%;
+      line-height: 20px;
+      padding-right: 20px;
+      border-radius: 3px;
+      padding-left: 10px;
+      margin: 0 5px;
+      outline: 0;
+      option {
+        width: 20px;
+        text-align: center;
+      }
+    }
+    select::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+.bluebor{
+  background: #ffffff;
+  margin-top: 5px;
+  // padding: 5px 24px 5px 45px;
+  padding: 5px 19px 5px 39px;
+  border-left: 3px solid #189DF3;
+  position: relative;
+  .deliteimg{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+}
+.bluebor:hover{
+  // background: #f6f6f6;
+  .deliteimg{
+    display: block;
+  }
+}
+
+.bluebor2{
+  background: #e9e9e9;
+  margin-top: 5px;
+  // padding: 5px 24px 5px 45px;
+  padding: 5px 19px 5px 39px;
+  position: relative;
+  margin-right: 10px;
+  .deliteimg{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+}
+.bluebor2:hover{
+  background: #e9e9e9;
+  .deliteimg{
+    display: block;
+  }
+}
+
+
+.blue{
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+// 提示是否保存
+.saveMask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  .isSave {
+    width: 300px;
+    height: 180px;
+    background: #fff;
+    .tipCon {
+      color: #333;
+      text-align: center;
+      margin: 60px 0 27px 0;
+    }
+    .saveBtn {
+      display: flex;
+      justify-content: center;
+      p {
+        width: 80px;
+        height: 30px;
+        border-radius: 3px;
+        margin: 0 15px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+    .sureSave {
+      color: #fff;
+      background: #189df3;
+    }
+    .cancalSave {
+      background: #f3f3f3;
+      border: 1px solid #e7e7e7;
+      color: #666;
+    }
+  }
+}
+
+/*定义滚动条样式（高宽及背景）*/
+::-webkit-scrollbar {
+  width: 6px; /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+  background: transparent;
+}
+/*定义滚动条轨道（凹槽）样式*/
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    /* 较少使用 */
+  border-radius: 3px;
+}
+/*定义滑块 样式*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  height: 100px; /* 滚动条滑块长度 */
+  background-color: rgba(229, 229, 229, 0.6);
+}

@@ -1,0 +1,271 @@
+.mainbox{
+  height: 100%;
+  width: 100%;
+  .parent{
+    margin-top: 50px;
+    margin-left: 78px;
+  }
+
+
+  .xuanze1{
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    .xuanze2{
+      height: 50px;
+      line-height: 50px;
+      color: #189DF3;
+      font-size: 14px;
+      margin-left: 44px;
+      cursor: pointer;
+      width: 200px;
+      b{
+        font-size: 20px;
+        line-height: 45px;
+        font-weight: 600;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .xuanze3{
+    position: absolute;
+    z-index: 20000;
+    width:148px;
+    height:320px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 6px 0px rgba(219,219,219,0.74);
+    top: 104px;
+    left: 24px;
+    .xzitem{
+      width: 100%;
+      height: 40px;
+      cursor: pointer;
+      img{
+        width: 15px;
+        height: 15px;
+        margin-left: 34px;
+      }
+      span{
+        line-height: 40px;
+        margin-left: 14px;
+      }
+    }
+
+    .xzitem:hover{
+      background: #ECF8FF;
+    }
+  }
+
+
+  .allitem{
+    width: 100%;
+    background: #f0f2f5;
+    overflow-y: scroll;
+
+    h2{
+      margin-bottom: 0;
+      margin-left: 45px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .tableitem{
+      position: relative;
+      float: left;
+      margin-left: 45px;
+      margin-top: 30px;
+      width: 350px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 5px rgba(218,218,218,0.79);
+      background: #FFFFFF;
+      overflow: hidden;
+      padding: 24px;
+      height: 350px;
+
+      .tables{
+        height: 220px;
+        overflow-y: scroll;
+        overflow-x: scroll;
+
+
+        .heng{
+          height: 50px;
+          border-bottom: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          line-height: 50px;
+          float: left;
+          min-width: 100%;
+          clear: both;
+          .shu{
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            min-width: 80px;
+            border-left: 1px solid #ccc;
+            overflow: hidden;
+          }
+        }
+      }
+
+
+
+      .btn0{
+        width: 67px;
+        height: 35px;
+        border-radius: 5px;
+        background: #ffffff;
+        color: #666666;
+        float: left;
+        margin-top: 15px;
+        border: 1px solid #ddd;
+        line-height: 35px;
+        cursor: pointer;
+        text-align: center;
+        img{
+          width: 15px;
+          margin-bottom: 3px;
+        }
+      }
+
+      .btn1{
+        width: 67px;
+        height: 35px;
+        border-radius: 5px;
+        background: #189df3;
+        color: #ffffff;
+        float: left;
+        margin-top: 15px;
+        border: 1px solid #ddd;
+        line-height: 35px;
+        cursor: pointer;
+        text-align: center;
+        img{
+          width: 15px;
+          margin-bottom: 3px;
+        }
+      }
+
+      .shujukuai{
+        width: 100%;
+        height: 300px;
+        line-height: 300px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+
+      .mohu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 280px;
+        opacity: 0.8;
+        background: #FFFFFF;
+        z-index: 1000;
+      }
+
+
+
+    }
+
+    .tableitem:hover{
+      box-shadow: 0 0 15px rgba(218,218,218,0.79);
+    }
+  }
+
+
+
+
+
+}
+
+
+
+//发布的弹窗
+.publishMask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: default;
+
+  .pubSucc {
+    width: 460px;
+    height: 270px;
+    background: #fff;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pubTop {
+    font-size: 17px;
+    color: #189DF3;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E3E3E3;
+
+    img {
+      width: 28px;
+      margin: 0 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .pubTip {
+    font-size: 12px;
+    color: #333;
+    padding: 20px 25px;
+    box-sizing: border-box;
+
+    p {
+      span {
+        color: #189DF3;
+        font-size: 17px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      height: 30px;
+      line-height: 30px;
+      margin-bottom: 0;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .keepEdit {
+    width: 85px;
+    color: #666;
+    border: 1px solid #E7E7E7;
+    background: #F3F3F3;
+    margin-right: 15px;
+  }
+
+  .pubSuccess {
+    width: 75px;
+    color: #fff;
+    background: #189DF3;
+  }
+}

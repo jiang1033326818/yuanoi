@@ -1,0 +1,70 @@
+.editor {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 250px);
+  background: #fff;
+}
+
+.editorHd {
+  padding: 8px;
+  border: 1px solid #e6e9ed;
+}
+
+.editorBd {
+  flex: 1;
+}
+
+.editorSidebar,
+.editorContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorSidebar {
+  background: #fafafa;
+
+  &:first-child {
+    border-right: 1px solid #e6e9ed;
+  }
+
+  &:last-child {
+    border-left: 1px solid #e6e9ed;
+  }
+}
+
+.flow,
+.mind,
+.koni {
+  flex: 1;
+}
+
+.save {
+  position: absolute;
+  top: 800px;
+  right: 20%;
+  z-index: 1000;
+}
+.updata {
+  position: absolute;
+  top: 125px;
+  right: 150px;
+}
+.add {
+  position: absolute;
+  top: 125px;
+  right: 50px;
+}
+.topbtn {
+  display: flex;
+  margin-left: 50px;
+  .updata2 {
+    margin-left: 30px;
+  }
+}
+.livel{
+  line-height: 30px;
+  margin-left: 50px;
+  margin-right: 20px;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "李然  CEO",
+  "children": [
+    {
+      "name": "技术部 刘一  CTO",
+      "children": [
+        {"name": "宋搜  技术经理", "value": 17010},
+        {"name": "声大奥  产品总监", "value": 5842},
+        {
+          "name": "王飞  产品经理 ",
+          "children": [
+            {"name": "山东矿  产品设计", "value": 1983,
+              "children": [
+                {"name": "山东矿  产品设计", "value": 1983},
+                {"name": "山东矿  产品设计", "value": 2047},
+                {"name": "山东矿  产品设计", "value": 1375},
+                {"name": "山东矿  产品设计", "value": 8746},
+                {"name": "山东矿  产品设计", "value": 2202},
+                {"name": "山东矿  产品设计", "value": 1382},
+                {"name": "山东矿  产品设计", "value": 1629},
+                {"name": "山东矿  产品设计", "value": 1675},
+                {"name": "山东矿  产品设计", "value": 2042}
+              ]
+            },
+            {"name": "山东矿  产品设计", "value": 2047},
+            {"name": "山东矿  产品设计", "value": 1375},
+            {"name": "山东矿  产品设计", "value": 8746},
+            {"name": "山东矿  产品设计", "value": 2202},
+            {"name": "山东矿  产品设计", "value": 1382},
+            {"name": "山东矿  产品设计", "value": 1629},
+            {"name": "山东矿  产品设计", "value": 1675},
+            {"name": "山东矿  产品设计", "value": 2042}
+          ]
+        },
+        {"name": "赵多  teamleader", "value": 1041},
+        {"name": "赵多  teamleader", "value": 1041},
+        {"name": "赵多  teamleader", "value": 1041},
+        {"name": "赵多  teamleader", "value": 1041}
+
+      ]
+    },
+    {
+      "name": "行政部   王花  CFO ",
+      "children": [
+        {
+          "name": " 柳州   财务总监",
+          "children": [
+            {"name": "Converters", "value": 721},
+            {"name": "DelimitedTextConverter", "value": 4294},
+            {"name": "GraphMLConverter", "value": 9800},
+            {"name": "IDataConverter", "value": 1314},
+            {"name": "JSONConverter", "value": 2220}
+          ]
+        },
+        {"name": "撒的   人事总监", "value": 1759},
+        {"name": "松岛枫 财务 ", "value": 2165},
+        {"name": "DataSet   会计", "value": 586},
+        {"name": "DataSource  出纳", "value": 3331}
+      ]
+    }
+  ]
+}
